@@ -17,60 +17,6 @@ storage: <img src="packages/storage/coverage_badge.svg" alt="storage Coverage">
 Total coverage: <img src="./total_coverage_badge.svg" alt="total Coverage">
 <!-- end-coverage:ignore -->
 
-
-## Description
-
-This is an example project for demonstrating how to use the `run_all_coverage` script.
-
-This script takes care of running the tests and generating the coverage report for the `lib` folder and for each package under the packages folder.
-For this example app, the tests will be run for the `lib` folder and for the `form_inputs` and `storage` packages.
-After running the tests, the script will generate the coverage report for the aforementioned folders and packages, and will update the `README.md` file with the coverage badges and the percentage of coverage for each folder and package.
-Finally it will open the `lib` folder coverage report on the browser.
-
-*Note:* The total coverage percentage is calculated by summing the total lines of code and the total covered lines of code for all the folders and packages.
-
-:red_circle: **Important**: This package requires that the `README.md` file contains the following texts, without the `/` at the beginning, we are adding the `/` to avoid the coverage script adding the coverage badges under this line:
-```
-/<!-- coverage::ignore -->
-
-...Badges
-
-<!-- end-coverage:ignore -->
-```
-By having these texts, the script will be able to update the coverage badges in the `README.md` file.
-
-## Usage
-These are the steps needed in order to run the `run_all_coverage` script:
-
-1 - Install lcov ([lcov](https://github.com/linux-test-project/lcov)):
-```brew install lcov```
-
-2 - Install lcov-to-badge-cli globally:
-```npm install lcov2badge```
-
-3 - Copy the `run_all_coverage.sh` script to the root of your project.
-
-
-4 - Run `run_all_coverage.sh` script:
-```sh run_all_coverage.sh```
-
-5 - Optionally, add these folders to the `.gitignore` file:
-```
-# Coverage
-coverage/
-packages/*/coverage/
-
-# Node modules
-node_modules/
-package-lock.json
-package.json
-```
-
-
-
-:tada: **Congratulations!** The coverage report has been generated and the `README.md` file has been updated with the coverage badges and the percentage of coverage for each folder and package.
-
-
 [coverage_badge]: coverage_badge.svg
 [flutter_localizations_link]: https://api.flutter.dev/flutter/flutter_localizations/flutter_localizations-library.html
 [internationalization_link]: https://flutter.dev/docs/development/accessibility-and-localization/internationalization
