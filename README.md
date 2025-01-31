@@ -9,12 +9,12 @@ A Very Good Project created by Very Good CLI.
 
 ---
 
-## Badges
+## Badges example
 <!-- coverage:ignore -->
-Main library: <img src="./coverage_badge.svg" alt="Main Library Coverage">
-form_inputs: <img src="packages/form_inputs/coverage_badge.svg" alt="form_inputs Coverage">
-storage: <img src="packages/storage/coverage_badge.svg" alt="storage Coverage">
-Total coverage: <img src="./total_coverage_badge.svg" alt="total Coverage">
+Main library: <img src="./example/coverage_badge.svg" alt="Main Library Coverage">
+form_inputs: <img src="./example/packages/form_inputs/coverage_badge.svg" alt="form_inputs Coverage">
+storage: <img src="./example/packages/storage/coverage_badge.svg" alt="storage Coverage">
+Total coverage: <img src="./example/total_coverage_badge.svg" alt="total Coverage">
 <!-- end-coverage:ignore -->
 
 
