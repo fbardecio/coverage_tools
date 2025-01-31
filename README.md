@@ -1,6 +1,5 @@
 # Coverage Tools
 
-![coverage][coverage_badge]
 [![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
 [![License: MIT][license_badge]][license_link]
 
@@ -15,6 +14,8 @@ A Very Good Project created by Very Good CLI.
 Main library: <img src="./coverage_badge.svg" alt="Main Library Coverage">
 form_inputs: <img src="packages/form_inputs/coverage_badge.svg" alt="form_inputs Coverage">
 storage: <img src="packages/storage/coverage_badge.svg" alt="storage Coverage">
+Total coverage: <img src="./total_coverage_badge.svg" alt="total Coverage">
+<!-- end-coverage:ignore -->
 
 
 ## Description
@@ -26,11 +27,17 @@ For this example app, the tests will be run for the `lib` folder and for the `fo
 After running the tests, the script will generate the coverage report for the aforementioned folders and packages, and will update the `README.md` file with the coverage badges and the percentage of coverage for each folder and package.
 Finally it will open the `lib` folder coverage report on the browser.
 
-:red_circle: **Important**: This package requires that the `README.md` file contains the following text, without the `/` at the beginning, we are adding the `/` to avoid the coverage script adding the coverage badges under this line:
+*Note:* The total coverage percentage is calculated by summing the total lines of code and the total covered lines of code for all the folders and packages.
+
+:red_circle: **Important**: This package requires that the `README.md` file contains the following texts, without the `/` at the beginning, we are adding the `/` to avoid the coverage script adding the coverage badges under this line:
 ```
 /<!-- coverage::ignore -->
-```
 
+...Badges
+
+<!-- end-coverage:ignore -->
+```
+By having these texts, the script will be able to update the coverage badges in the `README.md` file.
 
 ## Usage
 These are the steps needed in order to run the `run_all_coverage` script:
@@ -41,10 +48,13 @@ These are the steps needed in order to run the `run_all_coverage` script:
 2 - Install lcov-to-badge-cli globally:
 ```npm install lcov2badge```
 
-3 - Run `run_coverage.sh` script:
+3 - Copy the `run_all_coverage.sh` script to the root of your project.
+
+
+4 - Run `run_all_coverage.sh` script:
 ```sh run_all_coverage.sh```
 
-4 - Optionally, add these folders to the `.gitignore` file:
+5 - Optionally, add these folders to the `.gitignore` file:
 ```
 # Coverage
 coverage/
@@ -56,10 +66,7 @@ package-lock.json
 package.json
 ```
 
-To run the script, execute the following command:
-```
-sh run_all_coverage.sh
-```
+
 
 :tada: **Congratulations!** The coverage report has been generated and the `README.md` file has been updated with the coverage badges and the percentage of coverage for each folder and package.
 

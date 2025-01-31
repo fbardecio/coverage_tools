@@ -1,9 +1,12 @@
 # See https://www.dartlang.org/guides/libraries/private-files
 
+.DS_Store
+
 # Files and directories created by pub
 .dart_tool/
 .packages
 build/
+
 # If you're building an application, you may want to check-in your pubspec.lock
 pubspec.lock
 
@@ -25,6 +28,7 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+
 # Miscellaneous
 *.class
 *.log
@@ -110,9 +114,6 @@ unlinked_spec.ds
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
 
-# Coverage
-coverage/
-
 # Submodules
 packages/**/pubspec.lock
 
@@ -141,6 +142,7 @@ app.*.map.json
 # Coverage
 coverage/
 packages/*/coverage/
+*.gcov.html
 
 # Node modules
 node_modules/
