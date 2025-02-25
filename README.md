@@ -31,7 +31,7 @@ Finally it will open the `lib` folder coverage report on the browser.
 
 :red_circle: **Important**: This package requires that the `README.md` file contains the following texts, without the `/` at the beginning, we are adding the `/` to avoid the coverage script adding the coverage badges under this line:
 ```
-/<!-- coverage::ignore -->
+/<!-- coverage:ignore -->
 
 ...Badges
 
